@@ -3,3 +3,4 @@ uvicorn
 Flask
 gunicorn
 fastapi
+psycopg2-binary
