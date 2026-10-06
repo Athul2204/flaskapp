@@ -4,8 +4,7 @@ import psycopg2
 
 import os
 
-DATABASE_URL = os.environ["DATABASE_URL"]
-
+DATABASE_URL = os.environ["DATABASE_URL"].strip()
 
 
 
