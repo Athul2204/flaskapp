@@ -1,7 +1,12 @@
 from flask import Flask, render_template
 import psycopg2
 
-DATABASE_URL = "postgresql://sample_db_2doe_user:CPOVijMTS5wvXuFy6DZtMSLwBoEJBqTq@dpg-db29i1bbc2fs73fpqa7g-a/sample_db_2doe"
+
+import os
+
+DATABASE_URL = os.environ["DATABASE_URL"]
+
+
 
 
 app = Flask(__name__)
